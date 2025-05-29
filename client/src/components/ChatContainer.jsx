@@ -53,11 +53,12 @@ function ChatContainer() {
 
         {/* ........ Header ....... */}
       <div className='flex items-center gap-3 py-3 mx-4 border-b border-stone-500'>
-        <img onClick={()=>setShowMedia(!showMedia)} src={selectedUser.profilePic || assets.avatar_icon} alt='' className='w-8 rounded-full max-md:cursor-pointer' />
+        <img src={selectedUser.profilePic || assets.avatar_icon} alt='' className='w-8 rounded-full max-md:cursor-pointer' />
         <p className='flex-1 text-lg text-white flex items-center gap-2'>
             {selectedUser.fullName}
             {onlineUsers.includes(selectedUser._id) ? <span className='w-2 h-2 rounded-full bg-green-500'></span> :  <span className='w-2 h-2 rounded-full bg-gray-500'></span> }
         </p>
+        <button onClick={()=>setShowMedia(!showMedia)} className='md:hidden w-17 h-7 rounded-xl bg-stone-500/20 text-violet-500 text-sm hover:bg-stone-500/40'>Media</button>
         <img onClick={()=> setSelectedUser(null)} src={assets.arrow_icon} className='md:hidden max-w-7'/>
         <img src={assets.help_icon} className='max-md:hidden max-w-5'/>
       </div>
