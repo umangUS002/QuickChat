@@ -6,12 +6,13 @@ import { AuthContext } from '../../context/AuthContext';
 
 function ChatContainer() {
 
-    const {messages, selectedUser, setSelectedUser, sendMessage, getMessages} = useContext(ChatContext);
+    const {showMedia,setShowMedia,messages, selectedUser, setSelectedUser, sendMessage, getMessages} = useContext(ChatContext);
     const {authUser, onlineUsers} = useContext(AuthContext);
 
     const scrollEnd = useRef();
 
     const [input,setInput] = useState('');
+
 
     //handle sending a message
     const handleSendMessage = async(e) => {
@@ -52,7 +53,7 @@ function ChatContainer() {
 
         {/* ........ Header ....... */}
       <div className='flex items-center gap-3 py-3 mx-4 border-b border-stone-500'>
-        <img src={selectedUser.profilePic || assets.avatar_icon} alt='' className='w-8 rounded-full' />
+        <img onClick={()=>setShowMedia(!showMedia)} src={selectedUser.profilePic || assets.avatar_icon} alt='' className='w-8 rounded-full max-md:cursor-pointer' />
         <p className='flex-1 text-lg text-white flex items-center gap-2'>
             {selectedUser.fullName}
             {onlineUsers.includes(selectedUser._id) ? <span className='w-2 h-2 rounded-full bg-green-500'></span> :  <span className='w-2 h-2 rounded-full bg-gray-500'></span> }

@@ -12,6 +12,8 @@ export const ChatProvider = ({children}) => {
     const [selectedUser,setSelectedUser] = useState(null);
     const [unseenMessages,setUnseenMessages] = useState({})
 
+    const [showMedia,setShowMedia] = useState(false);
+
     const {socket, axios} = useContext(AuthContext);
 
     // Getting all users for sideBar
@@ -82,7 +84,7 @@ export const ChatProvider = ({children}) => {
     }, [socket, selectedUser]);
 
     const value = {
-        messages, users, selectedUser, getUsers,  
+        messages, users, selectedUser, getUsers, showMedia, setShowMedia,
         sendMessage, setSelectedUser, unseenMessages, setUnseenMessages, getMessages
     }
 

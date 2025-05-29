@@ -6,7 +6,7 @@ import { AuthContext } from '../../context/AuthContext';
 
 function RightSidebar() {
 
-  const {selectedUser, messages} = useContext(ChatContext);
+  const {showMedia,selectedUser, messages} = useContext(ChatContext);
   const {logout, onlineUsers} = useContext(AuthContext);
   const [msgImages, setMsgImages] = useState([]);
 
@@ -19,9 +19,9 @@ function RightSidebar() {
 
   return selectedUser && (
     <div className={`bg-[#818582]/10 text-white w-full relative overflow-y-scroll 
-    ${selectedUser ? "max-md:hidden" : ""}`}>
+    ${selectedUser ? (showMedia ? "block" : "hidden md:block") : "hidden"}`}>
       <div className='flex pt-5 md:pt-16 flex-col items-center gap-2 text-xs font-light mx-auto'>
-        <img src={selectedUser.profilePic || assets.avatar_icon} className='w-20 aspect-[1/1] rounded-full'/>
+        <img  src={selectedUser.profilePic || assets.avatar_icon} className='w-20 aspect-[1/1] rounded-full'/>
         <h1 className='px-10 text-xl font-medium mx-auto flex items-center gap-2'>
           {onlineUsers.includes(selectedUser._id) && <p className='w-2 h-2 rounded-full bg-green-500'></p>}
           {selectedUser.fullName}
