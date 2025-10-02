@@ -75,13 +75,13 @@ npm run dev
 ## 📸 Screenshots
 
 ### Home Page
-![Login Page](assets/Loginpage.png)
+![Login Page](client/src/assets/loginPage.png)
 
 ### Chat Page
-![Chat Page](assets/chatPage.png)
+![Chat Page](client/src/assets/chatPage.png)
 
 ### Update Profile Page
-![Profile Page](assets/updateProfile.png)
+![Profile Page](client/src/assets/updateProfile.png)
 
 ---
 
