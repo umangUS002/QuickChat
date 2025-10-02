@@ -3,7 +3,6 @@
 QuickChat is a real-time chat application built using the **MERN (MongoDB, Express, React, Node.js)** stack.  
 It allows users to communicate instantly through private chats, providing a seamless and interactive messaging experience.
 
----
 
 ## 🚀 Live Demo
 
@@ -20,7 +19,6 @@ Explore the live application here:
 - **Styling:** Tailwind CSS  
 - **Deployment:** Vercel  
 
----
 
 ## 🔑 Key Features
 
@@ -37,28 +35,31 @@ Explore the live application here:
 To run the project locally:
 
 ### 1️⃣ Clone the repository
-```bash git clone https://github.com/umangUS002/QuickChat.git cd QuickChat```
+```bash git clone https://github.com/umangUS002/QuickChat.git cd QuickChat
+```
 
 
-
-## Set up the backend:
+## 2️⃣ Set up the backend:
  ```cd server
 npm install
+```
+
+## 3️⃣ Set up the frontend:
+```cd ../client
+npm install
+```
 
 
-## Set up the frontend:
-```cd ../client```
-```npm install```
+## 4️⃣ Start the backend server:
+```cd ../server
+nodemon server.js
+```
 
 
-## Start the backend server:
-```cd ../server```
-```nodemon server.js```
+## 5️⃣ Start the frontend development server:
+```cd ../client
+npm run dev
+```
 
 
-## Start the frontend development server:
-```cd ../client```
-```npm run dev```
-
-
-## Open your browser and navigate to http://localhost:3000 to use the application.
+# Open your browser and navigate to http://localhost:3000 to use the application.
