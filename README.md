@@ -42,8 +42,8 @@ To run the project locally:
 
 
 ## Set up the backend:
- ```cd server```
-```npm install```
+ ```cd server
+npm install
 
 
 ## Set up the frontend:
