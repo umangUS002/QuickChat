@@ -40,24 +40,28 @@ To run the project locally:
 
 
 ## 2️⃣ Set up the backend:
- ```cd server
+```bash
+cd server
 npm install
 ```
 
 ## 3️⃣ Set up the frontend:
-```cd ../client
+```bash
+cd ../client
 npm install
 ```
 
 
 ## 4️⃣ Start the backend server:
-```cd ../server
+```bash
+cd ../server
 nodemon server.js
 ```
 
 
 ## 5️⃣ Start the frontend development server:
-```cd ../client
+```bash
+cd ../client
 npm run dev
 ```
 
