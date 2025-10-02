@@ -35,7 +35,9 @@ Explore the live application here:
 To run the project locally:
 
 ### 1️⃣ Clone the repository
-```bash git clone https://github.com/umangUS002/QuickChat.git cd QuickChat
+```bash
+git clone https://github.com/umangUS002/QuickChat.git
+cd QuickChat
 ```
 
 
@@ -66,4 +68,4 @@ npm run dev
 ```
 
 
-# Open your browser and navigate to http://localhost:3000 to use the application.
+**Open your browser and navigate to http://localhost:3000 to use the application.**
