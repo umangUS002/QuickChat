@@ -26,7 +26,7 @@ Explore the live application here:
 
 - 💬 **Real-Time Messaging:** Instant communication with WebSocket support  
 - 🔐 **User Authentication:** Secure login and registration using JWT  
-- 👥 **Private & Group Chats:** Engage in one-on-one or group conversations  
+- 👥 **Private Chats:** Engage in one-on-one conversations  
 - 📱 **Responsive Design:** Optimized for both desktop and mobile devices  
 - 🖼️ **User Profiles:** Manage user profiles and display avatars  
 
@@ -37,9 +37,7 @@ Explore the live application here:
 To run the project locally:
 
 ### 1️⃣ Clone the repository
-```bash```
-```git clone https://github.com/umangUS002/QuickChat.git```
-```cd QuickChat```
+```bash git clone https://github.com/umangUS002/QuickChat.git cd QuickChat```
 
 
 
